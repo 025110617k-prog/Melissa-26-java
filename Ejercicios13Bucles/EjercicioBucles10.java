@@ -1,4 +1,4 @@
-package Ejercios13Bucles;
+package Ejercicios13Bucles;
 public class EjercicioBucles10 {
     public static void main(String[] args) {
         int positivos = 0;

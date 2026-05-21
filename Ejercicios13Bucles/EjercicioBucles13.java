@@ -1,4 +1,4 @@
-package Ejercios13Bucles;
+package Ejercicios13Bucles;
 public class EjercicioBucles13 {
     public static void main(String[] args) {
         System.out.print("Introduce el primer número: ");

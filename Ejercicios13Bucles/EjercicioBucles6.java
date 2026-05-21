@@ -1,4 +1,4 @@
-package Ejercios13Bucles;
+package Ejercicios13Bucles;
 public class EjercicioBucles6 {
     public static void main(String[] args) {
         int i = 320;

@@ -1,4 +1,4 @@
-package Ejercios13Bucles;
+package Ejercicios13Bucles;
 public class EjercicioBucles7 {
     public static void main(String[] args) {
         int combinacion = 1234;

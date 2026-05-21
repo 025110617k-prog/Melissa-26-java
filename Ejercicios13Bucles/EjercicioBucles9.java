@@ -1,4 +1,4 @@
-package Ejercios13Bucles;
+package Ejercicios13Bucles;
 public class EjercicioBucles9 {
     public static void main(String[] args) {
         System.out.print("Introduce un número inicial: ");
