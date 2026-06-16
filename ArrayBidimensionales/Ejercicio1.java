@@ -2,23 +2,31 @@ package ArrayBidimensionales;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        int[][] num = {
-            {0, 30, 2, 0, 0, 5},
-            {75, 0, 0, 0, 0, 0},
-            {0, 0, -2, 9, 0, 11}
-        };
+        int[][] num = new int[3][6];
+         int fila , columna;
+
+        num[0][0] = 0;
+        num[0][1] = 30;
+        num[0][2] = 2;
+        num[0][5] = 5;
+
+        num[1][0] = 75;
+        num[1][4] = 0;
+
+        num[2][2] = -2;
+        num[2][3] = 9;
+        num[2][5] = 11;
         
-        System.out.printf("%-10s", "Array num");
-        for (int c = 0; c < 6; c++) {
-            System.out.printf("%10s", "Columna " + c);
+        System.out.print("      ");
+        for (columna = 0; columna < 6; columna++) {
+            System.out.print(" Columna " + columna);
         }
-        System.out.println();
-        for (int fila = 0; fila < 3; fila++) {
-            System.out.printf("%-10s", "Fila " + fila); // Muestra la fila actual
-            for (int columna = 0; columna < 6; columna++) {
-                System.out.printf("%10d", num[fila][columna]); 
+
+        for (fila = 0; fila < 3; fila++) {
+            System.out.print("\nFila " + fila);
+            for (columna = 0; columna < 6; columna++) {
+                System.out.printf("%10d", num[fila][columna]);
             }
-            System.out.println();
         }
     }
 }

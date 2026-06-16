@@ -1,16 +1,16 @@
 package ArrayBidimensionales;
-public class Ejercicio2 {
-    public static void main(String[] args) {
+public class Ejercicio3 {
+
+    public static void main(String[] args) throws InterruptedException {
 
         int[][] num = new int[4][5];
-        int f , c;
 
-        // Lecrtura de datos
-        System.out.println("Por favor, ingrese 20 numeros enteros: ");
+        int f, c;
+
         for (f = 0; f < 4; f++) {
             for (c = 0; c < 5; c++) {
-                System.out.print("num[" + f + ", " + c + "]: ");
-                num[f][c] = Integer.parseInt(System.console().readLine());
+                // System.out.print("num[" + f + ", " + c + "]: ");
+                num[f][c] = (int) (Math.random() * 900) + 100;
             }
         }
 
@@ -19,19 +19,20 @@ public class Ejercicio2 {
         for (f = 0; f < 4; f++) {
             sumaFila = 0;
             for (c = 0; c < 5; c++) {
-                System.out.printf("%7d   ", num[f][c]);
+                System.out.printf("%7d    ", num[f][c]);
                 sumaFila = sumaFila + num[f][c];
+                Thread.sleep(500);
             }
             System.out.printf("|%7d\n", sumaFila);
         }
 
-        //Suma parcial de las columnas
+        // Suma parcial de las columnas
         for (c = 0; c < 5; c++) {
             System.out.print("---------");
         }
         System.out.println("----------");
         int sumaColumna;
-        int sumaTotal =0;
+        int sumaTotal = 0;
         for (c = 0; c < 5; c++) {
             sumaColumna = 0;
             for (f = 0; f < 4; f++) {
@@ -39,6 +40,7 @@ public class Ejercicio2 {
             }
             sumaTotal = sumaTotal + sumaColumna;
             System.out.printf("|%7d   ", sumaColumna);
+            Thread.sleep(500);
         }
         System.out.printf("|%7d   ", sumaTotal);
     }
