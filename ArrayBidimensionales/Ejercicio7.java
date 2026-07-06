@@ -49,6 +49,7 @@ public class Ejercicio7 {
                 System.out.println("¡BOOM! Has pisado la mina. Fin del juego.");
                 juegoActivo = false;
             } else {
+                
                 System.out.println("Casilla vacía. Sigue buscando.");
                 if (Math.abs(disparoFila - minaFila) <= 1 && Math.abs(disparoColumna - minaColumna) <= 1) {
                     System.out.println("¡Cuidado! ¡Hay una mina cerca!");
