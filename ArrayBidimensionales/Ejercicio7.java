@@ -50,9 +50,6 @@ public class Ejercicio7 {
                 juegoActivo = false;
             } else {
                 System.out.println("Casilla vacía. Sigue buscando.");
-
-                // LÓGICA DEL RADAR: Comprueba si la mina está a 1 casilla de distancia
-                // usando el valor absoluto de la resta de posiciones
                 if (Math.abs(disparoFila - minaFila) <= 1 && Math.abs(disparoColumna - minaColumna) <= 1) {
                     System.out.println("¡Cuidado! ¡Hay una mina cerca!");
                 }
